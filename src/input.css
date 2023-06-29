@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .banner {
+    @apply flex w-full h-screen justify-between res_menu:flex-col res_menu:items-center res_menu:h-auto;
+  }
+  .banner .container {
+    @apply w-[90%] flex flex-row res_menu:flex-col;
+  }
+  .banner .container .left {
+    @apply w-1/2 h-full flex justify-center items-center res_menu:w-full res_menu:justify-center res_menu:items-center res_menu:pt-[100px];
+  }
+  .banner .container .right {
+    @apply w-1/2 h-full flex justify-center items-center res_menu:w-full res_menu:h-1/3;
+  }
+
+  .btn {
+    @apply flex items-center gap-1 text-white font-bold bg-g_color py-2 px-3 rounded-3xl text-[15px];
+  }
+  .ability_main {
+    @apply h-auto w-full pb-[70px] res_menu:h-auto res_menu:pt-4;
+  }
+  .ability_main .container {
+    @apply w-[90%] flex justify-center items-center h-full res_menu:flex-col;
+  }
+  .ability_main .container .left {
+    @apply w-1/2 res_menu:w-full;
+  }
+
+  .ability_card {
+    @apply w-[300px] h-[400px] flex justify-center items-center rounded-xl overflow-hidden;
+  }
+  .ability_card .inner {
+    @apply w-[97%] h-[98%] bg-black overflow-hidden rounded-xl overflow-hidden justify-center items-center flex flex-col;
+  }
+  .ability_card .inner h1 {
+    @apply text-4xl gap-3;
+  }
+  .ability_card .inner span {
+    @apply text-center;
+  }
+  .ability_main .container .right {
+    @apply w-1/2 flex flex-col items-center res_menu:w-full res_menu:mt-8 res_menu:px-4 res_menu:items-center;
+  }
+  .ability_main .container .right .cards {
+    @apply flex flex-wrap gap-2 res_menu:items-center res_menu:justify-center;
+  }
+  .title {
+    @apply text-5xl  font-bold text-white my-4 res_menu:text-3xl res_menu:justify-center;
+  }
+  .text {
+    @apply text-white text-lg;
+  }
+  .services {
+    @apply h-screen w-full res_menu:h-auto;
+  }
+  .services .container {
+    @apply h-full w-[90%] flex flex-col items-center justify-center;
+  }
+  .btn-service {
+    @apply bg-gray-500 w-36 rounded-full text-white py-3;
+  }
+  .button_group {
+    @apply w-full flex justify-center gap-7 my-10;
+  }
+  .active {
+    @apply text-y_color  w-36 rounded-full py-3 border border-gray-500;
+  }
+  .cards_service {
+    @apply flex  items-center justify-center gap-5 res_menu:flex-col w-full;
+  }
+  .service_card {
+    @apply border gap-2 border-gray-500 w-[350px] h-[380px] flex flex-col items-center rounded-xl pt-4 px-5;
+  }
+  .service_card .circle {
+    @apply w-28 h-28 rounded-full border border-gray-500 flex items-center justify-center;
+  }
+  .service_card p {
+    @apply text-center text-gray-200 px-[6px];
+  }
+  .service_card button {
+    @apply flex gap-2 items-center text-g_color;
+  }
+  .experience {
+    @apply h-auto w-full res_menu:h-auto pt-10;
+  }
+  .experience .container {
+    @apply h-full flex flex-col items-center w-[90%];
+  }
+  .experience_card {
+    @apply flex bg-gray-700 items-center justify-around h-32 rounded-lg res_menu:h-auto res_menu:flex-wrap res_menu:p-5 my-4;
+  }
+  .experience_card .year_ex {
+    @apply text-2xl text-white  res_menu:w-[50%] res_menu:text-lg;
+  }
+  .experience_card .img_ex {
+    @apply res_menu:w-[50%] res_menu:flex res_menu:justify-end;
+  }
+  .experience_card .job_ex {
+    @apply flex flex-col res_menu:w-[65%];
+  }
+  .experience_card .job_ex h1 {
+    @apply text-xl text-white res_menu:text-sm;
+  }
+  .experience_card .job_ex span {
+    @apply text-g_color res_menu:text-sm;
+  }
+  .experience_card button {
+    @apply flex gap-2 items-center text-white text-lg res_menu:w-[35%] res_menu:text-sm;
+  }
+  .pricing {
+    @apply h-screen res_menu:h-auto;
+  }
+  .pricing .container {
+    @apply h-auto flex flex-col items-center w-[90%];
+  }
+  .pricing_card {
+    @apply flex flex-col gap-1 w-[32%] border border-gray-500 rounded-xl text-white res_menu:w-full res_menu:my-4;
+  }
+  .pricing_card .top_price {
+    @apply flex flex-col items-center border-b-2 border-g_color pb-5;
+  }
+  .pricing_main {
+    @apply w-full mt-4 flex gap-[1%] res_menu:flex-wrap;
+  }
+  .pricing_card-container {
+    @apply w-[75%] mx-auto;
+  }
+  .pricing_card .top_price button {
+    @apply px-5 py-2 rounded-tl-none rounded-tr-none;
+  }
+  .pricing_card .title_price {
+    @apply flex items-center gap-1;
+  }
+  .pricing_card .bottom_price {
+    @apply pt-4 pb-4;
+  }
+  .btn_pcice {
+    @apply px-4 py-3 my-3 border border-g_color text-g_color mx-auto block rounded-lg;
+  }
+  .contact input,
+  .contact textarea,
+  .contact select {
+    margin-bottom: 20px;
+  }
+  .contact {
+    @apply h-auto pt-[70px] res_menu:h-auto pb-[20px] res_menu:pt-[20px];
+  }
+  .contact .container {
+    @apply h-full flex flex-col gap-10 w-[90%] items-center res_menu:h-auto;
+  }
+  .title_contact {
+    @apply h-[15vh] flex flex-col items-center justify-between my-[50px];
+  }
+  .container_contact {
+    @apply w-[90%]  h-auto mt-10 flex justify-between res_menu:w-full res_menu:flex-col res_menu:gap-3;
+  }
+  .container_contact .left {
+    @apply h-full rounded-lg bg-[#505050] border border-gray-300 w-[60%] flex flex-col p-10 items-center res_menu:w-full res_menu:h-auto;
+  }
+  .container_contact .left h1 {
+    @apply text-xl mb-5 text-center;
+  }
+  .container_contact .left div {
+    @apply w-full flex justify-between items-center;
+  }
+  .container_contact .right {
+    @apply w-[33%] flex flex-col gap-3 res_menu:w-full;
+  }
+  .container_contact .right .contact_card {
+    @apply bg-[#505050] w-full h-1/3 res_menu:h-auto p-3 flex flex-col justify-center  items-center px-2 rounded-lg border border-gray-300;
+  }
+  .container_contact .right .contact_card .sub_title {
+    @apply flex items-center gap-3;
+  }
+  .container_contact .right .contact_card .sub_title .circle-icon {
+    @apply rounded-full w-20 h-20 flex justify-center items-center bg-gray-700;
+  }
+  .footer {
+    @apply w-full  pb-10 pt-10;
+  }
+  .footer .container {
+    @apply flex res_menu:flex-wrap res_menu:px-3 res_menu:gap-y-5;
+  }
+  .footer .container .logo_des {
+    @apply w-[35%] flex flex-col gap-4 res_menu:w-[50%] mob:w-full;
+  }
+  .footer .container .logo_des .row {
+    @apply flex items-center gap-3;
+  }
+  .footer .container .menu_footer {
+    @apply w-[20%] res_menu:w-[50%] mob:w-full;
+  }
+  .footer .container .menu_footer ul {
+    @apply flex flex-col text-white gap-4 text-base;
+  }
+  .footer .container .news_letter {
+    @apply w-[25%] res_menu:w-[50%] mob:w-full;
+  }
+}
+
+@layer base {
+  .container {
+    @apply mx-auto com:max-w-[85%];
+  }
+}
+@media (max-width: 990px) {
+  .inner_big {
+    justify-content: flex-start !important;
+  }
+}
